@@ -10,7 +10,7 @@ datasource db {
 model Enterprise {
   id          String   @id @default(uuid())
   name        String
-  price       Decimal  @db.Decimal(10, 2)
+  price       Decimal  @db.Decimal(10, 3)
   imageUrls   String[]
   description String
   bathroom    Int
