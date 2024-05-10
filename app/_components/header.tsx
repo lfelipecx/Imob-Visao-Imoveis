@@ -7,7 +7,7 @@ import { Contact, HomeIcon, MenuIcon, Users } from "lucide-react";
 
 const Header = () => {
     return ( 
-        <div className="flex items-center justify-between px-5 pt border-2 border-b-orange-400">
+        <div className="flex items-center justify-between px-5">
             <Link href="/" className="relative h-[80px] w-[100px]">
                 <Image src="/logo01.png" alt="Logo Visão" fill className="object-cover" />
             </Link>
