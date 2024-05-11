@@ -23,7 +23,7 @@ const CategoryItem = ({category} : CategoryItemProps) => {
                     width={20} 
                     className="rounded-full"                  
                 /> 
-                <span className="text-sm font-semibold">{category.name}</span>
+                <span className="text-sm font-semibold hover:text-primary">{category.name}</span>
             </Link>
         </div>
         
