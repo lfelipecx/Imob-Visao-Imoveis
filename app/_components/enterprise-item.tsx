@@ -1,6 +1,7 @@
 import { Prisma } from "@prisma/client";
 import { BathIcon, BedDouble, CarFrontIcon } from "lucide-react";
 import Image from "next/image";
+import { Card } from "./ui/card";
 
 interface EnterpriseItemProps {
     enterprise: Prisma.EnterpriseGetPayload<{
@@ -16,9 +17,9 @@ interface EnterpriseItemProps {
 
 const EnterpriseItem = ({enterprise} : EnterpriseItemProps) => {
     return ( 
-        <div className="min-w-[380px] max-w-[380px] space-y-4 bg-zinc-900 rounded-lg">
+        <Card className="min-w-[360px] max-w-[360px] space-y-4 bg-zinc-900 rounded-lg">
             {/** IMAGEM */}
-            <div className="relative h-[250px] w-full">
+            <div className="relative h-[240px] w-full">
                 <Image 
                     src={enterprise.imageUrls[0]}
                     alt={enterprise.name}
@@ -35,18 +36,26 @@ const EnterpriseItem = ({enterprise} : EnterpriseItemProps) => {
                 <h2 className="text-xl font-semibold">{enterprise.name}</h2>
                 <p>{enterprise.city}</p>
                 <p>{enterprise.address}</p>
-                <p className="text-sm py-3">{enterprise.description}</p>
+                <div className="h-[150px]">
+                    <p className="text-sm py-3">{enterprise.description}</p>
+                </div>
 
-                <div className="flex items-center gap-2">
-                    <BedDouble size={16} />
-                    <p className="text-sm">{enterprise.room} Quartos</p>
-                    <BathIcon size={16} />
-                    <p className="text-sm">{enterprise.bathroom} Banheiro</p>
-                    <CarFrontIcon size={16} />
-                    <p className="text-sm">{enterprise.garage} Garagem</p>
+                <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-1">
+                        <BedDouble size={16} />
+                        <p className="text-sm">{enterprise.room} Quartos</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                        <BathIcon size={16} />
+                        <p className="text-sm">{enterprise.bathroom} Banheiro</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                        <CarFrontIcon size={16} />
+                        <p className="text-sm">{enterprise.garage} Garagem</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </Card>
      );
 }
  
