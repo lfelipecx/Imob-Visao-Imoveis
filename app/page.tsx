@@ -10,7 +10,7 @@ import EnterPriseList from "./_components/enterprise-list";
 export default function Home() {
   return (
     <>
-        <Header />
+        
 
         <div className="p-5">
           <CategoryList />
@@ -23,7 +23,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="space-y-2 pb-5">
+        <div className="space-y-2 pb-5 pl-1">
           <div className="flex items-center justify-between px-5 pt-3">
             <h2 className="text-xl font-semibold">Empreendimentos em Destaques</h2>
             <Button
