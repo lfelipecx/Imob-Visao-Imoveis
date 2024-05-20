@@ -1,7 +1,6 @@
 import Link from "next/link";
 import BannerItem from "./_components/banner-item";
 import CategoryList from "./_components/category-list";
-import Header from "./_components/header";
 import { Button } from "./_components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
 import EnterPriseList from "./_components/enterprise-list";

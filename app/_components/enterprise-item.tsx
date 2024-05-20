@@ -28,7 +28,7 @@ const EnterpriseItem = ({enterprise} : EnterpriseItemProps) => {
                 />
 
                 <div className="absolute left-2 top-2 rounded-full bg-primary px-2 py-1">
-                    <p className="text-sm font-semibold">{enterprise.category.name}</p>
+                    <p className="text-sm font-semibold text-zinc-900">{enterprise.category.name}</p>
                 </div>
             </div>
             {/** TEXTO */}
@@ -37,7 +37,7 @@ const EnterpriseItem = ({enterprise} : EnterpriseItemProps) => {
                 <p>{enterprise.city}</p>
                 <p>{enterprise.address}</p>
                 <div className="h-[150px]">
-                    <p className="text-sm py-3">{enterprise.description}</p>
+                    <p className="text-sm text-muted-foreground py-3">{enterprise.description}</p>
                 </div>
 
                 <div className="flex items-center gap-3">

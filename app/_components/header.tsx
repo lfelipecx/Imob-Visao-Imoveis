@@ -1,13 +1,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
 import { Contact, HomeIcon, MenuIcon, Users } from "lucide-react";
 
 const Header = () => {
     return ( 
-        <div className="flex items-center justify-between px-5">
+        <div className="flex items-center justify-between px-5 rounded-b-lg border-2 border-b-zinc-900">
             <Link href="/" className="relative h-[80px] w-[100px]">
                 <Image src="/logo01.png" alt="Logo Visão" fill className="object-cover" />
             </Link>
@@ -34,33 +34,39 @@ const Header = () => {
                             className="w-full justify-start space-x-3 rounded-full text-sm font-normal"
                             asChild
                         >
-                            <Link href="/">
-                                <HomeIcon size={16} />
-                                <span className="block">Início</span>
-                            </Link>
+                            <SheetClose asChild>
+                                <Link href="/">
+                                    <HomeIcon size={16} />
+                                    <span className="block">Início</span>
+                                </Link>
+                            </SheetClose>
                         </Button>
 
-                    
+                        
                         <Button
                             variant="ghost"
                             className="w-full justify-start space-x-3 rounded-full text-sm font-normal"
                             asChild
                         >
-                            <Link href="/">
-                                <Users size={16} />
-                                <span className="block">Quem Somos</span>
-                            </Link>
-                            </Button>
-
+                            <SheetClose asChild>
+                                <Link href="/about">
+                                    <Users size={16} />
+                                    <span className="block">Quem Somos</span>
+                                </Link>
+                            </SheetClose>
+                        </Button>
+                       
                         <Button
                             variant="ghost"
                             className="w-full justify-start space-x-3 rounded-full text-sm font-normal"
                             asChild
                         >   
-                            <Link href="/">
-                                <Contact size={16} />
-                                <span className="block">Contato</span>
-                            </Link>
+                            <SheetClose asChild>
+                                <Link href="/">
+                                    <Contact size={16} />
+                                    <span className="block">Contato</span>
+                                </Link>
+                            </SheetClose>
                         </Button>
                         
                     </div>
