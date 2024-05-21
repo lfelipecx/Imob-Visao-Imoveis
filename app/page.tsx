@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="space-y-2 pb-5 pl-1">
           <div className="flex items-center justify-between px-5 pt-3">
-            <h2 className="text-xl font-semibold">Empreendimentos em Destaques</h2>
+            <h2 className="text-lg font-semibold">Empreendimentos em Destaques</h2>
             <Button
               variant="ghost"
               className="h-fit p-0 text-primary hover:bg-transparent"
