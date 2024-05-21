@@ -22,6 +22,7 @@ const EnterpriseImages = ({name, imageUrls} : EnterpriseImagesProps) => {
                     src={currentImage} 
                     alt={name} 
                     fill
+                    quality={100}
                     className="object-cover"                    
                 />
             </div>
@@ -39,11 +40,12 @@ const EnterpriseImages = ({name, imageUrls} : EnterpriseImagesProps) => {
                         onClick={() => handleImageClick(imageUrl)}
                     >
                        
-                    <div className="h-full w-full relative">
+                    <div className="h-[90px] w-full relative">
                         <Image
                             src={imageUrl}
                             alt={name}
                             fill
+                            quality={100}
                             className="object-cover rounded-md"
                         />
 

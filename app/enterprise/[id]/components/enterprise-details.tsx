@@ -17,7 +17,10 @@ interface EnterpriseDetailsProps {
 const EnterpriseDetails = ({enterprise} : EnterpriseDetailsProps) => {
     return ( 
         <div className="p-4">
-            <p className="uppercase text-lg font-semibold">{enterprise.name}</p>
+            <div className="flex items-center justify-between">
+                <p className="uppercase text-lg font-semibold">{enterprise.name}</p>
+                <p className="text-sm font-semibold rounded-full bg-primary px-2 py-1 text-zinc-900">{enterprise.category.name}</p>
+            </div>
             <p className="text-sm">{enterprise.city}</p>
             <p className="text-muted-foreground py-2">{enterprise.description}</p>
             <div className="flex items-center gap-2">
