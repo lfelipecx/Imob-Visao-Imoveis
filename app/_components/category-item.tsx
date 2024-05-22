@@ -11,8 +11,7 @@ const CategoryItem = ({category} : CategoryItemProps) => {
 
         
             <Link
-                href="/"
-                // href={`/categories/${category.id}/products`}
+                href={`/categories/${category.id}`}
                 className="flex items-center justify-center rounded-full gap-3 px-2 py-2 bg-zinc-900"
             >
                 

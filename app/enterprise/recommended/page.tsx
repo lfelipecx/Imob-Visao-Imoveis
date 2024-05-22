@@ -13,7 +13,7 @@ const RecommendedEnterprises = async () => {
     })
     return ( 
         <div className="p-5">
-            <h1 className="uppercase text-primary mb-2">Empreendimentos</h1>
+            <h1 className="uppercase text-primary text-xl font-semibold mb-2">Empreendimentos</h1>
 
             <div className="flex flex-col gap-4 items-center">
                 {enterprises.map((enterprise) => (
