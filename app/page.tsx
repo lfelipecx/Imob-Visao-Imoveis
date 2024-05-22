@@ -4,12 +4,15 @@ import CategoryList from "./_components/category-list";
 import { Button } from "./_components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
 import EnterPriseList from "./_components/enterprise-list";
+import Search from "./_components/search";
 
 
 export default function Home() {
   return (
     <>
-        
+        <div className="p-4">
+          <Search />
+        </div>
 
         <div className="p-5">
           <CategoryList />
