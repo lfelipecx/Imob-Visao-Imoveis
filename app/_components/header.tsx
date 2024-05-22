@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
-import { Contact, HomeIcon, MenuIcon, Users } from "lucide-react";
+import { Building, Contact, HomeIcon, MenuIcon, Users } from "lucide-react";
 
 const Header = () => {
     return ( 
@@ -38,6 +38,19 @@ const Header = () => {
                                 <Link href="/">
                                     <HomeIcon size={16} />
                                     <span className="block">Início</span>
+                                </Link>
+                            </SheetClose>
+                        </Button>
+
+                        <Button
+                            variant="ghost"
+                            className="w-full justify-start space-x-3 rounded-full text-sm font-normal"
+                            asChild
+                        >
+                            <SheetClose asChild>
+                                <Link href="/enterprise/recommended">
+                                    <Building size={16} />
+                                    <span className="block">Imóveis</span>
                                 </Link>
                             </SheetClose>
                         </Button>
