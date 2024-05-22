@@ -9,6 +9,7 @@ const createUnderConstruction = async () => {
         data: {
             name: "Em Construção",
             imageUrl: "https://picsum.photos/id/237/200/300",
+            slug: "planta"
         }
     })
     
@@ -50,6 +51,7 @@ const createReadyVenture = async () => {
         data: {
             name: "Imóvel Pronto",
             imageUrl: "https://picsum.photos/id/237/200/300",
+            slug: "pronto"
         }
     })
     
@@ -91,6 +93,7 @@ const createTerrain = async () => {
         data: {
             name: "Terreno",
             imageUrl: "https://picsum.photos/id/237/200/300",
+            slug: "Terreno"
         }
     })
     
@@ -130,8 +133,9 @@ const createAgioEnterprise = async () => {
 
     const agioCategory = await prismaClient.category.create ({
         data: {
-            name: "Ágio",
+            name: "Imóvel usado",
             imageUrl: "https://picsum.photos/id/237/200/300",
+            slug: "Usado"
         }
     })
     
