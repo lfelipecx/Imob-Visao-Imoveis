@@ -5,6 +5,7 @@ import { Button } from "./_components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
 import EnterPriseList from "./_components/enterprise-list";
 import Search from "./_components/search";
+import TestimonyList from "./_components/testimony-list";
 
 
 export default function Home() {
@@ -48,6 +49,20 @@ export default function Home() {
           <BannerItem
             src="/banner02.png"
             alt="logo visão imóveis"
+          />
+        </div>
+
+        <div className="pb-5">
+          <div className="p-3 px-5">
+            <h1 className="text-lg font-semibold text-primary">O que nossos clientes dizem</h1>
+          </div>
+          <TestimonyList />
+        </div>
+
+        <div className="px-5 pb-5">
+          <BannerItem
+            src="/MCMV.png"
+            alt="minha casa minha vida"
           />
         </div>
 
