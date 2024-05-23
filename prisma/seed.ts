@@ -93,7 +93,7 @@ const createTerrain = async () => {
         data: {
             name: "Terreno",
             imageUrl: "https://picsum.photos/id/237/200/300",
-            slug: "Terreno"
+            slug: "terreno"
         }
     })
     
@@ -135,7 +135,7 @@ const createAgioEnterprise = async () => {
         data: {
             name: "Imóvel usado",
             imageUrl: "https://picsum.photos/id/237/200/300",
-            slug: "Usado"
+            slug: "usado"
         }
     })
     
