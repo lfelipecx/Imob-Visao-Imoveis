@@ -29,3 +29,10 @@ model Category {
   slug        String
   enterprises Enterprise[]
 }
+
+model Testimony {
+  id        String @id @default(uuid())
+  name      String
+  imageUrl  String
+  testimony String
+}

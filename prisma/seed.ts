@@ -171,6 +171,33 @@ const createAgioEnterprise = async () => {
     }
 }
 
+const createTestimony = async () => {
+    const testimony = [
+        {
+            name: "Paula Andrade",
+            imageUrl: "https://i.ibb.co/QXVFhcn/depo02.jpg",
+            testimony: "Só tenho a agradecer fui muito bem atendida e recomendo"
+        },
+        {
+            name: "Fernanda Souto",
+            imageUrl: "https://i.ibb.co/KbGwSZx/depo03.jpg",
+            testimony: "Excelentes profissionais me acompanharam do início ao fim"
+        },
+        {
+            name: "Pedro Marques",
+            imageUrl: "https://i.ibb.co/Q88sm9R/depo01.jpg",
+            testimony: "Consegui realizar meu sonho da casa própria e estou muito satisfeito com toda a equipe da Visão Imóveis"
+        }
+    ]
+
+    for(const item of testimony){
+        const newtestimony = await prismaClient.testimony.create({
+            data: item
+        })
+        console.log(`created ${newtestimony.name}`)
+    }
+}
+
 
 
 
@@ -180,6 +207,7 @@ const main = async () => {
     await createReadyVenture();
     await createTerrain();
     await createAgioEnterprise();
+    await createTestimony();
  
   };
   
