@@ -13,7 +13,7 @@ const CategoryItem = ({category} : CategoryItemProps) => {
         
             <Link
                 href={`/categories/${category.id}`}
-                className="flex items-center justify-center rounded-full gap-3 px-2 py-2 bg-zinc-900"
+                className="flex items-center justify-center rounded-full gap-1 px-2 py-2 bg-zinc-900 hover:text-primary"
             >
                 
                 {/* <Image
@@ -25,7 +25,7 @@ const CategoryItem = ({category} : CategoryItemProps) => {
                 />  */}
 
                 {CATEGORY_ICON[category.slug as keyof typeof CATEGORY_ICON]}
-                <span className="text-sm font-semibold hover:text-primary">{category.name}</span>
+                <span className="text-sm font-semibold">{category.name}</span>
             </Link>
         
         
