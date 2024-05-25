@@ -33,7 +33,7 @@ const Search = () => {
                 value={search}
             />
             <Button size="icon" type="submit">
-                <SearchIcon size={20} />
+                <SearchIcon size={20} className="text-zinc-900" />
             </Button>
         </form>
      );

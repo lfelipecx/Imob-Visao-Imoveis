@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="space-y-2 pb-5 pl-1">
+        <div className="space-y-3 pb-5 pl-1">
           <div className="flex items-center justify-between px-5 pt-3">
             <h2 className="text-sm font-semibold">Empreendimentos em Destaques</h2>
             <Button
@@ -54,7 +54,7 @@ export default function Home() {
 
         <div className="pb-5">
           <div className="p-3 px-5">
-            <h1 className="text-lg font-semibold text-primary">O que nossos clientes dizem</h1>
+            <h1 className="text-sm font-semibold">O que nossos clientes dizem</h1>
           </div>
           <TestimonyList />
         </div>

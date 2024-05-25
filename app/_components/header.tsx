@@ -75,7 +75,7 @@ const Header = () => {
                             asChild
                         >   
                             <SheetClose asChild>
-                                <Link href="/">
+                                <Link href="/contact">
                                     <Contact size={16} />
                                     <span className="block">Contato</span>
                                 </Link>
