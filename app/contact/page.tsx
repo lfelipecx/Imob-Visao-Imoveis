@@ -8,18 +8,18 @@ const ContactPage = () => {
     return ( 
         <div className="p-5 space-y-3">
             <h1 className="uppercase text-xl text-primary font-semibold">Contate-nos</h1>
-            <Card className="bg-zinc-900 p-2">
+            <Card className="bg-zinc-900 px-3 pt-5">
                 <div className="flex justify-center pb-2">
                     <MapPin size={40} className="text-primary"/>
                 </div>
                 <h1 className="text-center font-semibold pb-2 uppercase">Escritório</h1>
-                <p className="text-sm text-center pb-3">Rua Grécia, qd. 54, lt 01, loja 07,<br /> Parque Esplanada 3<br />Valparaíso de Goiás - GO</p>
+                <p className="text-sm text-center pb-5">Rua Grécia, qd. 54, lt 01, loja 07,<br /> Parque Esplanada 3<br />Valparaíso de Goiás - GO</p>
                 <Separator />
 
-                <div className="flex flex-col gap-2 justify-center items-center p-2">
+                <div className="flex flex-col gap-2 justify-center items-center py-5">
                     <Phone size={40} className="text-primary"/>
                     <h1 className="font-semibold uppercase">Suporte Whatsapp</h1>
-                    <Link href="/" className="flex gap-2 items-center rounded-full px-2 py-2 bg-primary hover:bg-primary-foreground">
+                    <Link href="/" className="flex gap-2 items-center rounded-full px-2 py-2 bg-primary hover:bg-primary/90">
                         <div className="relative h-[25px] w-[25px]">
                             <Image 
                                 src="/whatsapp.png" 
@@ -33,12 +33,12 @@ const ContactPage = () => {
 
                 <Separator />
 
-                <div className="flex justify-center p-2">
+                <div className="flex justify-center pt-5">
                     <UsersRound size={40} className="text-primary"/>
                 </div>
-                <h1 className="text-center font-semibold pb-2 uppercase">Redes Sociais</h1>
+                <h1 className="text-center font-semibold py-2 uppercase">Redes Sociais</h1>
                 
-                <div className="flex flex-col gap-1 items-center justify-center">
+                <div className="flex flex-col gap-1 items-center justify-center pb-5">
                     <Link href="/"  className="flex gap-2 hover:text-primary">
                         <InstagramIcon size={18} />
                         <p className="text-sm">Instagram</p>
