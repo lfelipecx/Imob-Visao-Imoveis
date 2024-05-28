@@ -1,5 +1,6 @@
 import { FacebookIcon, InstagramIcon } from "lucide-react";
 import { Separator } from "./ui/separator";
+import Link from "next/link";
 
 const Footer = () => {
     return ( 
@@ -17,21 +18,33 @@ const Footer = () => {
                     
                     <div className="flex flex-col gap-2">
                         <h2 className="text-sm font-semibold text-primary">Site</h2>
-                        <p className="text-xs hover:text-primary">Home</p>
-                        <p className="text-xs hover:text-primary">Imóveis</p>
-                        <p className="text-xs hover:text-primary">Quem Somos</p>
-                        <p className="text-xs hover:text-primary">Contato</p>
+                        <Link href="/">
+                            <p className="text-xs hover:text-primary">Home</p>
+                        </Link>
+                        <Link href="/enterprise/recommended">
+                            <p className="text-xs hover:text-primary">Imóveis</p>
+                        </Link>
+                        <Link href="/about">
+                            <p className="text-xs hover:text-primary">Quem Somos</p>
+                        </Link>
+                        <Link href="/contact">
+                            <p className="text-xs hover:text-primary">Contato</p>
+                        </Link>
                     </div>
 
                     <div className="flex flex-col gap-2">
                         <h2 className="text-sm font-semibold text-primary">Redes Sociais</h2>
                         <div className="flex items-center gap-1 hover:text-primary">
                             <InstagramIcon size={15} />
-                            <p className="text-xs">Instagram</p>
+                            <Link href="/">
+                                <p className="text-xs">Instagram</p>
+                            </Link>
                         </div>
                         <div className="flex items-center gap-1 hover:text-primary">
                             <FacebookIcon size={15} />
-                            <p className="text-xs">Facebook</p> 
+                            <Link href="/">
+                                <p className="text-xs">Facebook</p> 
+                            </Link>
                         </div>                     
                        
                     </div>
@@ -41,9 +54,9 @@ const Footer = () => {
                     <Separator />
                 </div>
 
-                <div className="flex justify-between items-center">
-                    <p className="text-xs">Desenvolvidor por Luiz Felipe</p>
-                    <p className="text-xs">61 98664-9103</p>
+                <div className="flex justify-between items-center pb-5">
+                    <p className="text-xs">Copyright © 2024 Desenvolvido por Luiz Felipe</p>
+                    <p className="text-xs">(61) 98664-9103</p>
                 </div>
 
             </div>
