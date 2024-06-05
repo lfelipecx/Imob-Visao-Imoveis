@@ -1,6 +1,7 @@
 import { Button } from "@/app/_components/ui/button";
 import { Prisma } from "@prisma/client";
 import { BathIcon, BedDouble, CarFrontIcon } from "lucide-react";
+import Link from "next/link";
 
 interface EnterpriseDetailsProps {
     enterprise: Prisma.EnterpriseGetPayload<{
@@ -38,7 +39,9 @@ const EnterpriseDetails = ({enterprise} : EnterpriseDetailsProps) => {
                 </div>
             </div>
             <Button className="mt-5 w-full uppercase text-zinc-900 font-semibold">
-                Fazer uma simulação
+                <Link href="https://wa.me/5561982435887?text=Gostaria+de+fazer+uma+simula%C3%A7%C3%A3o+de+financiamento.">
+                    Fazer uma simulação
+                </Link>
             </Button>
         </div>
      );
