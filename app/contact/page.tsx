@@ -19,7 +19,7 @@ const ContactPage = () => {
                 <div className="flex flex-col gap-2 justify-center items-center py-5">
                     <Phone size={40} className="text-primary"/>
                     <h1 className="font-semibold uppercase">Suporte Whatsapp</h1>
-                    <Link href="/" className="flex gap-2 items-center rounded-full px-2 py-2 bg-primary hover:bg-primary/90">
+                    <Link href="https://wa.me/5561982435887?text=Gostaria+de+fazer+saber+mais" className="flex gap-2 items-center rounded-full px-2 py-2 bg-primary hover:bg-primary/90">
                         <div className="relative h-[25px] w-[25px]">
                             <Image 
                                 src="/whatsapp.png" 
@@ -39,11 +39,11 @@ const ContactPage = () => {
                 <h1 className="text-center font-semibold py-2 uppercase">Redes Sociais</h1>
                 
                 <div className="flex flex-col gap-1 items-center justify-center pb-5">
-                    <Link href="/"  className="flex gap-2 hover:text-primary">
+                    <Link href="https://www.instagram.com/_visaoimoveis/"  className="flex gap-2 hover:text-primary">
                         <InstagramIcon size={18} />
                         <p className="text-sm">Instagram</p>
                     </Link>
-                    <Link href="/"  className="flex gap-2 hover:text-primary">
+                    <Link href="https://www.facebook.com/profile.php?id=100071623339976&locale=pt_BR"  className="flex gap-2 hover:text-primary">
                         <FacebookIcon size={18} />
                         <p className="text-sm">Facebook</p>
                     </Link>

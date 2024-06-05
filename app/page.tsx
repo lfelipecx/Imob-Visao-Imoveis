@@ -52,7 +52,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="pb-5">
+        <div className="pb-5 px-2">
           <div className="p-3 px-5">
             <h1 className="text-sm font-semibold">O que nossos clientes dizem</h1>
           </div>

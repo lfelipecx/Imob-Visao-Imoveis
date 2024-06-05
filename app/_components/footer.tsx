@@ -36,13 +36,13 @@ const Footer = () => {
                         <h2 className="text-sm font-semibold text-primary">Redes Sociais</h2>
                         <div className="flex items-center gap-1 hover:text-primary">
                             <InstagramIcon size={15} />
-                            <Link href="/">
+                            <Link href="https://www.instagram.com/_visaoimoveis/">
                                 <p className="text-xs">Instagram</p>
                             </Link>
                         </div>
                         <div className="flex items-center gap-1 hover:text-primary">
                             <FacebookIcon size={15} />
-                            <Link href="/">
+                            <Link href="https://www.facebook.com/profile.php?id=100071623339976&locale=pt_BR">
                                 <p className="text-xs">Facebook</p> 
                             </Link>
                         </div>                     
