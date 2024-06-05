@@ -34,6 +34,27 @@ const createUnderConstruction = async () => {
                     id: underConstructionCategory.id,
                 }
             }
+        },
+        {
+            name: "Residencial Green Park 5 Club",
+            price: 208,
+            imageUrls: [
+                "https://i.ibb.co/FWkywgy/Green02.jpg",
+                "https://i.ibb.co/ZXP1KYc/Green05.jpg",
+                "https://i.ibb.co/TL2TjmZ/Green09.jpg",
+                "https://i.ibb.co/9swtf1S/Green01.jpg",
+            ],
+            description: "Green Park 5 Club oferece lazer completo, que inclui piscina, quadra poliesportiva e salão de festas, os moradores podem desfrutar de momentos de relaxamento e diversão. Os apartamentos de dois quartos, com área de serviço, destacam-se por serem vazados e proporcionando um ambiente arejado.",
+            bathroom: 1,
+            room: 2,
+            garage: 1,
+            city: "Valparaíso 1",
+            address: "Etapa C",
+            category: {
+                connect: {
+                    id: underConstructionCategory.id,
+                }
+            }
         }
     ]
 

@@ -36,11 +36,13 @@ const CategoriesPage = async ({ params : {id} } : CategoriesPageProps) => {
 
             <h1 className="uppercase text-primary text-xl font-semibold mb-4">{category.name}</h1>
 
-            {category.enterprises.map((enterprise) => (
-                <div key={enterprise.name} className="flex flex-col items-center">
-                    <EnterpriseItem  enterprise={enterprise} />
-                </div>
-            ))}
+            <div className="flex flex-col gap-4 items-center">
+                {category.enterprises.map((enterprise) => (
+                    <div key={enterprise.name} className="flex flex-col items-center">
+                        <EnterpriseItem  enterprise={enterprise} />
+                    </div>
+                ))}
+            </div>
 
 
 

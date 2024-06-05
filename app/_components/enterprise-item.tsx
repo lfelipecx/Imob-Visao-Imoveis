@@ -38,7 +38,7 @@ const EnterpriseItem = ({enterprise} : EnterpriseItemProps) => {
                     <h2 className="text-xl font-semibold">{enterprise.name}</h2>
                     <p>{enterprise.city}</p>
                     <p>{enterprise.address}</p>
-                    <div className="h-[150px]">
+                    <div className="h-[160px]">
                         <p className="text-sm text-muted-foreground py-3">{enterprise.description}</p>
                     </div>
 
