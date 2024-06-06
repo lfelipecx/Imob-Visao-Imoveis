@@ -17,7 +17,7 @@ const EnterpriseImages = ({name, imageUrls} : EnterpriseImagesProps) => {
 
     return ( 
         <div>
-            <div className="h-[380px] w-full relative">
+            <div className="h-[380px] w-full relative lg:w-[50%]">
                 <Image 
                     src={currentImage} 
                     alt={name} 
@@ -27,11 +27,11 @@ const EnterpriseImages = ({name, imageUrls} : EnterpriseImagesProps) => {
                 />
             </div>
 
-            <div className="grid grid-cols-4 gap-4 mt-5 px-5">
+            <div className="grid grid-cols-4 gap-4 mt-5 px-5 lg:w-[50%]">
                 {imageUrls.map((imageUrl) => (
                     <button 
                         key={imageUrl} 
-                        className={`flex items-center justify-center rounded-md bg-accent h-[92px]
+                        className={`flex items-center justify-center rounded-md bg-accent h-[92px] lg:w-[180px]
                             ${
                                 imageUrl === currentImage &&
                                 "border-2 border-solid border-primary"
@@ -40,7 +40,7 @@ const EnterpriseImages = ({name, imageUrls} : EnterpriseImagesProps) => {
                         onClick={() => handleImageClick(imageUrl)}
                     >
                        
-                    <div className="h-[90px] w-full relative">
+                    <div className="h-[90px] w-full relative lg:w-[180px]">
                         <Image
                             src={imageUrl}
                             alt={name}
