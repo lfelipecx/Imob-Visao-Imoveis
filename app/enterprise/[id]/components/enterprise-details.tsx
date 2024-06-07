@@ -17,14 +17,14 @@ interface EnterpriseDetailsProps {
 
 const EnterpriseDetails = ({enterprise} : EnterpriseDetailsProps) => {
     return ( 
-        <div className="p-4">
+        <div className="p-4 lg:h-full lg:flex lg:flex-col lg:justify-center">
             <div className="flex items-center justify-between">
-                <p className="uppercase text-sm font-semibold">{enterprise.name}</p>
+                <p className="uppercase text-sm font-semibold lg:text-xl">{enterprise.name}</p>
                 <p className="text-xs font-semibold rounded-full bg-primary px-2 py-1 text-zinc-900">{enterprise.category.name}</p>
             </div>
-            <p className="text-sm">{enterprise.city}</p>
-            <p className="text-muted-foreground text-sm py-2">{enterprise.description}</p>
-            <div className="flex items-center gap-2">
+            <p className="text-sm lg:pb-5">{enterprise.city}</p>
+            <p className="text-muted-foreground text-sm py-2 lg:text-lg lg:py-10">{enterprise.description}</p>
+            <div className="flex items-center gap-2 lg:pt-10">
                 <div className="flex items-center gap-1">
                     <BedDouble size={16} />
                     <p className="text-sm">{enterprise.room} Quartos</p>
