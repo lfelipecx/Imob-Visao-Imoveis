@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/header";
 import Footer from "./_components/footer";
+import Link from "next/link";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +34,20 @@ export default function RootLayout({
 
           <Footer />
 
+          <div className="relative">
+            <Link href="/" className="fixed bottom-12 right-0 p-4 z-10 animate-bounce">
+              <Image 
+                src="/whatsapp.png" 
+                alt="botão whatsapp"
+                height={40}
+                width={40} 
+                className="rounded-sm shadow-lg ring ring-green-500 transition-all hover:shadow-md hover:ring-4"
+              />              
+            </Link>
+          </div>
+
         </div>
+
 
       </body>
     </html>
