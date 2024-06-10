@@ -42,7 +42,10 @@ export default function Home() {
             </Button>
 
           </div>
+
+          <div className="lg:px-4">
             <EnterPriseList />
+          </div>
 
         </div>
 
@@ -57,7 +60,10 @@ export default function Home() {
           <div className="p-3 px-5">
             <h1 className="text-sm font-semibold uppercase">O que nossos clientes dizem</h1>
           </div>
-          <TestimonyList />
+
+          <div className="lg:flex lg:justify-center">
+            <TestimonyList />
+          </div>
         </div>
 
         <div className="px-5 pb-5">
