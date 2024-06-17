@@ -1,4 +1,4 @@
-import { FacebookIcon, InstagramIcon } from "lucide-react";
+import { FacebookIcon, InstagramIcon, YoutubeIcon } from "lucide-react";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
 
@@ -45,7 +45,13 @@ const Footer = () => {
                             <Link href="https://www.facebook.com/profile.php?id=100071623339976&locale=pt_BR">
                                 <p className="text-xs">Facebook</p> 
                             </Link>
-                        </div>                     
+                        </div>
+                        <div className="flex items-center gap-1 hover:text-primary">
+                            <YoutubeIcon size={15} />
+                            <Link href="https://youtube.com/@visaoimoveis7431?si=q6p4Ydo8EJkvvuna">
+                                <p className="text-xs">YouTube</p> 
+                            </Link>
+                        </div>                      
                        
                     </div>
                 </div>
