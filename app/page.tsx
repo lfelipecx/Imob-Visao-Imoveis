@@ -56,6 +56,16 @@ export default function Home() {
           />
         </div>
 
+
+        <div className="pb-5 px-2">
+          <div className="p-3 px-5">
+            <h1 className="text-sm font-semibold uppercase">Agende uma visita</h1>
+          </div>
+          <video autoPlay loop muted className="w-full h-auto">
+            <source src="/antonella.mp4" />
+          </video>
+        </div>
+
         <div className="pb-5 px-2">
           <div className="p-3 px-5">
             <h1 className="text-sm font-semibold uppercase">O que nossos clientes dizem</h1>
