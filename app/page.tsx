@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className="px-5 py-5">
           <BannerItem
-            src="/banner01.png"
+            src="/homebanner.jpeg"
             alt="Realize seu sonho da casa própria"
           />
         </div>
