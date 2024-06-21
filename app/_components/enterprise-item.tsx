@@ -38,8 +38,8 @@ const EnterpriseItem = ({enterprise} : EnterpriseItemProps) => {
                     <h2 className="text-xl font-semibold">{enterprise.name}</h2>
                     <p>{enterprise.city}</p>
                     <p>{enterprise.address}</p>
-                    <div className="h-[160px]">
-                        <p className="text-sm text-muted-foreground py-3">{enterprise.description}</p>
+                    <div className="h-[170px] my-4">
+                        <p className="text-sm text-muted-foreground">{enterprise.description}</p>
                     </div>
 
                     <div className="flex items-center gap-3">
