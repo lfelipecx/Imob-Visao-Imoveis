@@ -51,8 +51,8 @@ export default function Home() {
 
         <div className="px-5 py-5">
           <BannerItem
-            src="/banner02.png"
-            alt="logo visão imóveis"
+            src="/homebanner02.jpeg"
+            alt="banner subsídio"
           />
         </div>
 
