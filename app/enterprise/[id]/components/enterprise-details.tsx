@@ -39,7 +39,7 @@ const EnterpriseDetails = ({enterprise} : EnterpriseDetailsProps) => {
                 </div>
             </div>
             <Button className="mt-5 w-full uppercase text-zinc-900 font-semibold">
-                <Link href="https://wa.me/5561982435887?text=Gostaria+de+fazer+uma+simula%C3%A7%C3%A3o+de+financiamento.">
+                <Link href="https://wa.me/5561982435887?text=Vim+pelo+site+e+gostaria+de+fazer+uma+simula%C3%A7%C3%A3o+de+financiamento.">
                     Fazer uma simulação
                 </Link>
             </Button>
