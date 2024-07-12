@@ -49,11 +49,16 @@ export default function Home() {
 
         </div>
 
-        <div className="px-5 py-5">
+        <div className="px-5 py-5 relative">
           <BannerItem
-            src="/homebanner02.jpeg"
+            src="/bannerSubsidio.jpeg"
             alt="banner subsídio"
           />
+          <div>
+              <Button className="absolute right-6 bottom-8 uppercase text-zinc-900 text-xs font-semibold w-[150px]">
+                  fazer uma simulação
+              </Button>
+          </div>            
         </div>
 
 
