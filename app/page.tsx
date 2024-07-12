@@ -55,8 +55,10 @@ export default function Home() {
             alt="banner subsídio"
           />
           <div>
-              <Button className="absolute right-6 bottom-8 uppercase text-zinc-900 text-xs font-semibold w-[150px]">
+              <Button className="absolute right-6 bottom-8 uppercase text-zinc-900 text-xs font-semibold w-[150px]">                  
+                <Link href="https://wa.me/5561982435887?text=Vim+pelo+site+e+gostaria+de+fazer+uma+simula%C3%A7%C3%A3o+de+financiamento.">
                   fazer uma simulação
+                </Link>
               </Button>
           </div>            
         </div>
