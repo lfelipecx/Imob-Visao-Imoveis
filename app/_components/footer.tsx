@@ -1,6 +1,7 @@
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from "lucide-react";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
+import { PiTiktokLogo } from "react-icons/pi";
 
 const Footer = () => {
     return ( 
@@ -51,7 +52,13 @@ const Footer = () => {
                             <Link href="https://youtube.com/@visaoimoveis7431?si=q6p4Ydo8EJkvvuna">
                                 <p className="text-xs">YouTube</p> 
                             </Link>
-                        </div>                      
+                        </div>
+                        <div className="flex items-center gap-1 hover:text-primary">
+                            <PiTiktokLogo size={15} />
+                            <Link href="https://www.tiktok.com/@visaoimoveis.mkt?_t=8oTtXEeYeGL&_r=1">
+                                <p className="text-xs">TikTok</p> 
+                            </Link>
+                        </div>                       
                        
                     </div>
                 </div>

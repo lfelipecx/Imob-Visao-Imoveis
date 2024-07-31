@@ -1,4 +1,5 @@
 import { FacebookIcon, InstagramIcon, MapPin, Phone, UsersRound, YoutubeIcon } from "lucide-react";
+import { PiTiktokLogo } from "react-icons/pi";
 import { Card } from "../_components/ui/card";
 import { Separator } from "../_components/ui/separator";
 import Link from "next/link";
@@ -38,7 +39,7 @@ const ContactPage = () => {
                 </div>
                 <h1 className="text-center font-semibold py-2 uppercase">Redes Sociais</h1>
                 
-                <div className="flex flex-col gap-1 items-center justify-center pb-5">
+                <div className="flex flex-col gap-1 items-center pb-5">
                     <Link href="https://www.instagram.com/_visaoimoveis/"  className="flex gap-2 items-center hover:text-primary">
                         <InstagramIcon size={18} />
                         <p className="text-sm">Instagram</p>
@@ -50,6 +51,10 @@ const ContactPage = () => {
                     <Link href="https://youtube.com/@visaoimoveis7431?si=q6p4Ydo8EJkvvuna"  className="flex gap-2 items-center hover:text-primary">
                         <YoutubeIcon size={18} />
                         <p className="text-sm">YouTube</p>
+                    </Link>
+                    <Link href="https://www.tiktok.com/@visaoimoveis.mkt?_t=8oTtXEeYeGL&_r=1"  className="flex gap-2 items-center hover:text-primary">
+                        <PiTiktokLogo size={18} />
+                        <p className="text-sm">TikTok</p>
                     </Link>
                 </div>
 

@@ -13,6 +13,10 @@
     "seed": "ts-node ./prisma/seed.ts"
   },
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.3.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@prisma/client": "^5.13.0",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-separator": "^1.0.3",
@@ -23,6 +27,7 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.2.1",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
