@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
 import { Building, Contact, HomeIcon, MenuIcon, Users } from "lucide-react";
+import { Separator } from "./ui/separator";
+import CategoryList from "./category-list";
 
 const Header = () => {
     return ( 
@@ -81,6 +83,16 @@ const Header = () => {
                                 </Link>
                             </SheetClose>
                         </Button>
+
+                        <Separator />
+
+                        <div className="p-1">
+                            <SheetClose asChild>
+                                <CategoryList />
+                            </SheetClose>
+                            
+                        </div>
+                        
                         
                     </div>
                 </SheetContent>
