@@ -8,18 +8,18 @@ datasource db {
 }
 
 model Enterprise {
-  id          String   @id @default(uuid())
-  name        String
-  price       Decimal  @db.Decimal(10, 3)
-  imageUrls   String[]
-  description String
-  bathroom    Int
-  room        Int
-  garage      Int
-  city        String
-  address     String
-  categoryId  String
-  category    Category @relation(fields: [categoryId], references: [id])
+  id               String         @id @default(uuid())
+  name             String
+  price            Decimal        @db.Decimal(10, 3)
+  imageUrls        String[]
+  description      String
+  bathroom         Int
+  room             Int
+  garage           Int
+  city             String
+  address          String
+  categoryId       String
+  category         Category       @relation(fields: [categoryId], references: [id])
 }
 
 model Category {
@@ -29,6 +29,7 @@ model Category {
   slug        String
   enterprises Enterprise[]
 }
+
 
 model Testimony {
   id        String @id @default(uuid())
