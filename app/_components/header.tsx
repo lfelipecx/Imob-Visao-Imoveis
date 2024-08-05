@@ -86,12 +86,12 @@ const Header = () => {
 
                         <Separator />
 
-                        <div className="p-1">
-                            <SheetClose asChild>
-                                <CategoryList />
-                            </SheetClose>
+                        
+                        <SheetClose>
+                            <CategoryList />
+                        </SheetClose>
                             
-                        </div>
+                        
                         
                         
                     </div>
