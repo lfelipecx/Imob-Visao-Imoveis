@@ -5,7 +5,7 @@ import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger 
 import { Button } from "./ui/button";
 import { Building, Contact, HomeIcon, MenuIcon, Users } from "lucide-react";
 import { Separator } from "./ui/separator";
-import CategoryList from "./category-list";
+import { quickSearchOptions } from "../_constants/search-city";
 
 const Header = () => {
     return ( 
@@ -87,10 +87,21 @@ const Header = () => {
 
                         <Separator />
 
-                        <SheetClose>                          
-                                <CategoryList />                        
-                                             
-                        </SheetClose>
+                        <div className="py-2">
+                            <h3 className="text-primary">Buscar imóvel por cidade</h3>
+                        </div>
+
+                        <div className="flex flex-col gap-2">
+                            {quickSearchOptions.map((option) => (
+                                <SheetClose key={option.title} asChild>
+                                    <Button className="justify-start rounded-full" variant="ghost" asChild>
+                                    <Link href={`/enterprise?city=${option.title}`}>
+                                        {option.title}
+                                    </Link>
+                                    </Button>
+                                </SheetClose>
+                            ))}
+                        </div>
                        
                         
                             
