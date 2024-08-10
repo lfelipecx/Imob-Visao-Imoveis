@@ -61,10 +61,10 @@ const createUnderConstruction = async () => {
             name: "Residencial Monte Alegre",
             price: 208,
             imageUrls: [
-                "https://i.ibb.co/FWkywgy/Green02.jpg",
-                "https://i.ibb.co/ZXP1KYc/Green05.jpg",
-                "https://i.ibb.co/TL2TjmZ/Green09.jpg",
-                "https://i.ibb.co/9swtf1S/Green01.jpg",
+                "https://i.ibb.co/MSsSP20/juda01.png",
+                "https://i.ibb.co/MSsSP20/juda03.png",
+                "https://i.ibb.co/9Y32SVx/juda00.png",
+                "https://i.ibb.co/9Y32SVx/juda02.png",
             ],
             description: "O residencial Monte Alegre é o novo empreendimento do Grupo Gois, este condomínio conta com playground para crianças, apartamentos com dois quartos e varanda. Além disso, se localiza na cidade de Valparaíso de Goiás.",
             bathroom: 1,
@@ -256,6 +256,27 @@ const createUnderConstruction = async () => {
                 "https://i.ibb.co/fQWYMj9/Villa-Campos03.jpg",
             ],
             description: "Apartamento dos Sonhos - 100% Financiado pelo Minha Casa Minha Vida! Imagine viver em um lugar onde o conforto e a diversão se encontram! Apresentamos a você este incrível apartamento com lazer completo, pronto para transformar a sua qualidade de vida. Lazer Completo: Piscina, academia, salão de festas, churrasqueira e muito mais!",
+            bathroom: 1,
+            room: 2,
+            garage: 1,
+            city: "Cidade Ocidental",
+            address: "Recreio Mossoró",
+            category: {
+                connect: {
+                    id: underConstructionCategory.id,
+                }
+            }
+        },
+        {
+            name: "Residencial Vista Verde",
+            price: 198,
+            imageUrls: [
+                "https://i.ibb.co/XVKB3wp/Vista-Verde00.jpg",
+                "https://i.ibb.co/HrDn1hd/Vista-Verde01.jpg",
+                "https://i.ibb.co/pPbDxyK/Vista-Verde02.jpg",
+                "https://i.ibb.co/Qf9j7rF/Vista-Verde03.jpg",
+            ],
+            description: "Um residencial moderno com casas elegantes, oferecendo lazer completo com piscinas, quadras esportivas, playground e áreas de convivência. Jardins paisagísticos e segurança 24 horas garantem tranquilidade. As residências, com design contemporâneo, são espaçosas e bem iluminadas, criando um ambiente ideal para famílias que buscam conforto e qualidade de vida.",
             bathroom: 1,
             room: 2,
             garage: 1,

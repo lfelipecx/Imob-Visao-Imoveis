@@ -4,38 +4,56 @@ import { SearchIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useRouter } from "next/navigation";
-import { FormEventHandler, useState } from "react";
+import { z } from "zod"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form"
+import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
+
+
+ 
+const formSchema = z.object({
+  search: z.string().trim().min(1, {
+    message: "Digite o nome do empreendimento"
+  }),
+})
+
 
 const Search = () => {
-    const router = useRouter()
-    const [search, setSearch] = useState("")
+    const form = useForm<z.infer<typeof formSchema>>({
+      resolver: zodResolver(formSchema),
+      defaultValues: {
+        search: "",
+      },
+    })
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSearch(e.target.value);
-      };
+    const router = useRouter()    
     
-      const handleSearchSubmit: FormEventHandler<HTMLFormElement> = (e) => {
-        e.preventDefault();
-    
-        if (!search) {
-          return;
-        }
-    
-        router.push(`/enterprise?search=${search}`);
-      };
+    const handleSearchSubmit = (data: z.infer<typeof formSchema>) => {
+      router.push(`/enterprise?search=${data.search}`);
+    };
+
 
     return ( 
-        <form className="flex gap-2" onSubmit={handleSearchSubmit}>
-            <Input 
-                placeholder="Buscar Empreendimento"
-                className="border-primary"
-                onChange={handleChange}
-                value={search}
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(handleSearchSubmit)} className="flex gap-2">
+            <FormField
+              control={form.control}
+              name="search"
+              render={({ field }) => (
+                <FormItem className="w-full">                  
+                  <FormControl>
+                    <Input className="border-primary" placeholder="Buscar Empreendimento" {...field} />
+                  </FormControl>                 
+                  <FormMessage />
+                </FormItem>
+              )}
             />
             <Button size="icon" type="submit">
                 <SearchIcon size={20} className="text-zinc-900" />
             </Button>
-        </form>
+          </form>
+        </Form>
+      
      );
 }
  

@@ -84,12 +84,15 @@ const Header = () => {
                             </SheetClose>
                         </Button>
 
+
                         <Separator />
 
-                        
-                        <SheetClose>
-                            <CategoryList />
+                        <SheetClose>                          
+                                <CategoryList />                        
+                                             
                         </SheetClose>
+                       
+                        
                             
                         
                         
