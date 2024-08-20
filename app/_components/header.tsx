@@ -94,9 +94,9 @@ const Header = () => {
                         <div className="flex flex-col gap-2">
                             {quickSearchOptions.map((option) => (
                                 <SheetClose key={option.title} asChild>
-                                    <Button className="justify-start rounded-full" variant="ghost" asChild>
+                                    <Button className="justify-start rounded-full text-sm font-normal" variant="ghost" asChild>
                                     <Link href={`/enterprise?city=${option.title}`}>
-                                        {option.title}
+                                        <span>{option.title}</span>
                                     </Link>
                                     </Button>
                                 </SheetClose>

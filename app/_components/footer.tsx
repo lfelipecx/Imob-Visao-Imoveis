@@ -13,7 +13,7 @@ const Footer = () => {
 
                     <div className="flex flex-col gap-1">
                         <h2 className="text-sm font-semibold uppercase text-primary">Visão Imóveis</h2>
-                        <p className="text-xs">Rua Grécia, qd. 54, lt 01, loja 07, Parque Esplanada 3</p>
+                        <p className="text-xs">Rua Grécia, qd. 54, lt 01, lojas 09 e 10, Parque Esplanada 3</p>
                         <p className="text-xs">Valparaíso de Goiás - GO</p>
                     </div>
                     
