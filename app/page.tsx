@@ -6,10 +6,28 @@ import { ChevronRightIcon } from "lucide-react";
 import EnterPriseList from "./_components/enterprise-list";
 import Search from "./_components/search";
 import TestimonyList from "./_components/testimony-list";
+import { db } from "./_lib/prisma";
+import EnterpriseItem from "./_components/enterprise-item";
 
 
 
-export default function Home() {
+const Home = async () => {
+  const enterprisesCity = await db.enterprise.findMany({
+    where: {
+      city: {
+        contains: "Valparaíso",
+        mode: "insensitive"
+      }      
+    },
+    include: {
+        category: {
+            select: {
+                name: true,
+            }
+        }
+    }
+  })
+
   return (
     <>
         <div className="px-5 pt-5">
@@ -73,6 +91,31 @@ export default function Home() {
           </video>
         </div>
 
+        <div className="space-y-3 pb-5 pl-1">
+          <div className="flex items-center justify-between px-3 pt-3">
+            <h2 className="text-sm font-semibold uppercase">Valparaíso de Goiás</h2>
+            <Button
+              variant="ghost"
+              className="h-fit p-0 text-primary hover:bg-transparent"
+              asChild
+              >
+              <Link href="/enterprise/recommended">
+                Ver todos
+                <ChevronRightIcon size={16} />
+              </Link>
+            </Button>
+
+          </div>
+
+          <div className="flex gap-4 overflow-x-scroll [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-4 lg:gap-2">
+            {enterprisesCity.map((enterprise) => (
+                <EnterpriseItem key={enterprise.id} enterprise={enterprise} />
+            ))}
+        </div>
+
+        </div>
+
+
         <div className="pb-5 px-2">
           <div className="p-3 px-3">
             <h1 className="text-sm font-semibold uppercase">O que nossos clientes dizem</h1>
@@ -97,3 +140,4 @@ export default function Home() {
     </>
   );
 }
+export default Home
