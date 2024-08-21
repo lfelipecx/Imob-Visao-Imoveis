@@ -14,7 +14,7 @@ const ContactPage = () => {
                     <MapPin size={40} className="text-primary"/>
                 </div>
                 <h1 className="text-center font-semibold pb-2 uppercase">Escritório</h1>
-                <p className="text-sm text-center pb-5">Rua Grécia, qd. 54, lt 01, loja 07,<br /> Parque Esplanada 3<br />Valparaíso de Goiás - GO</p>
+                <p className="text-sm text-center pb-5">Rua Grécia, qd. 54, lt 01, lojas 09 e 10,<br /> Parque Esplanada 3<br />Valparaíso de Goiás - GO</p>
                 <Separator />
 
                 <div className="flex flex-col gap-2 justify-center items-center py-5">
