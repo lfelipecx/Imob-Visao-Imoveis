@@ -9,7 +9,7 @@ import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Imob. Visão Imóveis",
+  title: "Visão Imóveis",
   description: "Imóbiliaria Visão Imóveis, realizando sonhos à mais de 20 anos",
   icons:{
     icon: "/favicon.ico"
