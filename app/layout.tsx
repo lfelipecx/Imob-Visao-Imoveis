@@ -5,6 +5,7 @@ import Header from "./_components/header";
 import Footer from "./_components/footer";
 import Link from "next/link";
 import Image from "next/image";
+import Analytics from "./_analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Analytics />
+      </head>
+      
       <body className={inter.className}>
 
         <div className="flex flex-col h-full">
