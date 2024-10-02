@@ -19,7 +19,7 @@ const Home = async () => {
         mode: "insensitive"
       }      
     },
-    take: 8,
+    take: 6,
     include: {
         category: {
             select: {
@@ -30,7 +30,7 @@ const Home = async () => {
   })
 
   return (
-    <>
+    <div>
         <div className="px-5 pt-5">
           <Search />
         </div>
@@ -46,7 +46,7 @@ const Home = async () => {
           />
         </div>
 
-        <div className="space-y-3 pb-5 pl-1">
+        <div className="space-y-3 pb-5 pl-1 lg:animate-slide-down">
           <div className="flex items-center justify-between px-3 pt-3">
             <h2 className="text-sm font-semibold uppercase">Empreendimentos em Destaques</h2>
             <Button
@@ -108,7 +108,7 @@ const Home = async () => {
 
           </div>
 
-          <div className="flex gap-4 overflow-x-scroll [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-4 lg:gap-2">
+          <div className="flex gap-4 overflow-x-scroll [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-3 lg:gap-2 lg:justify-items-center">
             {enterprisesCity.map((enterprise) => (
                 <EnterpriseItem key={enterprise.id} enterprise={enterprise} />
             ))}
@@ -138,7 +138,7 @@ const Home = async () => {
         
 
 
-    </>
+    </div>
   );
 }
 export default Home

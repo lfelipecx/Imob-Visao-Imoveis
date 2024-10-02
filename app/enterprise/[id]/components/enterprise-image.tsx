@@ -27,7 +27,7 @@ const EnterpriseImages = ({name, imageUrls} : EnterpriseImagesProps) => {
                 />
             </div>
 
-            <div className="grid grid-cols-4 gap-4 mt-5 px-5 lg:px-2">
+            <div className="grid grid-cols-4 gap-2 mt-5">
                 {imageUrls.map((imageUrl) => (
                     <button 
                         key={imageUrl} 

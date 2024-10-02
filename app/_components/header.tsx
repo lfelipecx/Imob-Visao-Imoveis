@@ -9,7 +9,7 @@ import { quickSearchOptions } from "../_constants/search-city";
 
 const Header = () => {
     return ( 
-        <div className="flex items-center justify-between px-5 rounded-b-lg border-2 border-b-zinc-900">
+        <div className="flex items-center justify-between px-5 rounded-b-lg border-2 border-b-zinc-900 lg:border-none">
             <Link href="/" className="relative h-[80px] w-[100px]">
                 <Image src="/logo01.png" alt="Logo Visão" fill className="object-cover" />
             </Link>

@@ -40,7 +40,7 @@ const EnterprisesPage = async ({ searchParams } : EnterprisesPageProps) => {
       <div className="px-5 py-6">
         <Search />
         <h2 className="my-6 text-lg font-semibold text-primary uppercase">Resultados para &quot;{searchParams?.search || searchParams?.city}&quot;</h2>
-        <div className="flex flex-col items-center gap-6 lg:grid lg:grid-cols-4 lg:gap-2">
+        <div className="flex flex-col items-center gap-6 lg:grid lg:grid-cols-4">
             {enterprise.map((enterprise : any) => (
               <EnterpriseItem
                 key={enterprise.id}
