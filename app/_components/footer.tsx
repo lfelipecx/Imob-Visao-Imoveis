@@ -5,11 +5,10 @@ import { PiTiktokLogo } from "react-icons/pi";
 
 const Footer = () => {
     return ( 
-        <div className="w-full h-auto bg-zinc-900 p-3">
+        <div className="w-full h-auto bg-zinc-900 p-3">  
             
-            <div className="flex flex-col">
 
-                <div className="flex flex-col gap-7">
+                <div className="flex flex-col gap-7 md:flex md:flex-row md:justify-between md:px-16">
 
                     <div className="flex flex-col gap-1">
                         <h2 className="text-sm font-semibold uppercase text-primary">Visão Imóveis</h2>
@@ -72,7 +71,7 @@ const Footer = () => {
                     <p className="text-xs">(61) 98664-9103</p>
                 </div>
 
-            </div>
+            
 
 
 

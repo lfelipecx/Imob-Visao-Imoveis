@@ -15,7 +15,7 @@ const RecommendedEnterprises = async () => {
         <div className="p-5">
             <h1 className="uppercase text-primary text-xl font-semibold mb-2">Empreendimentos</h1>
 
-            <div className="flex flex-col gap-4 items-center">
+            <div className="flex flex-col gap-4 items-center lg:grid lg:grid-cols-4 lg:gap-2">
                 {enterprises.map((enterprise) => (
                     <EnterpriseItem
                         key={enterprise.name}

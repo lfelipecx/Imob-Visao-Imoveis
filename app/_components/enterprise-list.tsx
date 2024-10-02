@@ -9,7 +9,8 @@ const EnterPriseList = async () => {
                     name: true,
                 }
             }
-        }
+        },
+        take: 8,
     })
 
 

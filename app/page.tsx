@@ -19,6 +19,7 @@ const Home = async () => {
         mode: "insensitive"
       }      
     },
+    take: 8,
     include: {
         category: {
             select: {
