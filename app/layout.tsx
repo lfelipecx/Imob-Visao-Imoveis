@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Visão Imóveis",
-  description: "Imóbiliaria Visão Imóveis, realizando sonhos à mais de 20 anos",
+  description: "Imóbiliaria Visão Imóveis, comprometida com o profissionalismo e a transparência em todas as etapas do processo. Oferecemos um atendimento personalizado, buscando sempre as melhores opções para nossos clientes, com total clareza em cada negociação.",
   icons:{
     icon: "/favicon.ico"
   }
