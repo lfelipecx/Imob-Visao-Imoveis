@@ -40,7 +40,7 @@ export default function RootLayout({
           <Footer />
 
           <div className="relative">
-            <Link href="https://wa.me/5561982435887?text=Vim+pelo+site+e+gostaria+de+saber+mais+sobre+os+empreendimentos." className="fixed bottom-12 right-0 p-4 z-10 animate-bounce">
+            <Link href="https://wa.me/5561982435887?text=Vim+pelo+site+e+gostaria+de+mais+informações." className="fixed bottom-12 right-0 p-4 z-10 animate-bounce">
               <Image 
                 src="/whatsapp.png" 
                 alt="botão whatsapp"
