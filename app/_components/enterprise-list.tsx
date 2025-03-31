@@ -10,12 +10,12 @@ const EnterPriseList = async () => {
                 }
             }
         },
-        take: 6,
+        take: 8,
     })
 
 
     return ( 
-        <div className="flex gap-4 overflow-x-scroll [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-3 lg:gap-2 lg:justify-items-center">
+        <div className="flex gap-4 overflow-x-scroll [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-4 lg:gap-2 lg:justify-items-center">
             {enterprises.map((enterprise) => (
                 <EnterpriseItem key={enterprise.id} enterprise={enterprise} />
             ))}

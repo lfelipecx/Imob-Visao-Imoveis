@@ -14,7 +14,9 @@ const RecommendedEnterprises = async () => {
     })
     return ( 
         <div className="p-5">
-            <Search />
+            <div className="lg:flex lg:justify-center">
+                <Search />
+            </div>
             <h1 className="uppercase text-primary text-xl font-semibold my-6">Empreendimentos</h1>
 
             <div className="flex flex-col gap-4 items-center lg:grid lg:grid-cols-4">

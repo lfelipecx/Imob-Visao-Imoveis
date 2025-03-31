@@ -6,7 +6,7 @@ const BannerItem = (props: ImageProps) => {
     <Image
       height={0}
       width={0}
-      className="h-52 w-full object-cover object-left rounded-lg md:h-[500px]"
+      className="h-52 w-full object-cover object-left rounded-lg md:h-[500px] md:w-[full] md:object-fill"
       sizes="100vw"
       quality={100}
       {...props}

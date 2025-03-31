@@ -9,8 +9,8 @@ import { quickSearchOptions } from "../_constants/search-city";
 
 const Header = () => {
     return ( 
-        <div className="flex items-center justify-between px-5 rounded-b-lg border-2 border-b-zinc-900 lg:border-none">
-            <Link href="/" className="relative h-[80px] w-[100px]">
+        <div className="flex items-center justify-between px-5 border-b-2 border-b-zinc-900 lg:border-none lg:px-10">
+            <Link href="/" className="relative h-[80px] w-[100px] lg:h-[130px] lg:w-[150px]">
                 <Image src="/logo01.png" alt="Logo Visão" fill className="object-cover" />
             </Link>
 
@@ -21,7 +21,7 @@ const Header = () => {
                         variant="outline" 
                         className="border-none bg-transparent"
                     >
-                        <MenuIcon />
+                        <MenuIcon size={30} />
                     </Button>
                 </SheetTrigger>
 

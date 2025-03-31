@@ -35,7 +35,7 @@ const Search = () => {
 
     return ( 
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(handleSearchSubmit)} className="flex gap-2 md:w-[500px]">
+          <form onSubmit={form.handleSubmit(handleSearchSubmit)} className="flex gap-2 md:w-[500px] lg:w-[700px]">
             <FormField
               control={form.control}
               name="search"

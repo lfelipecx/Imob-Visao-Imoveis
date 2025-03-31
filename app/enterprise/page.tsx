@@ -38,7 +38,9 @@ const EnterprisesPage = async ({ searchParams } : EnterprisesPageProps) => {
     <div>
       
       <div className="px-5 py-6">
-        <Search />
+        <div className="lg:flex lg:justify-center">
+          <Search />
+        </div>
         <h2 className="my-6 text-lg font-semibold text-primary uppercase">Resultados para &quot;{searchParams?.search || searchParams?.city}&quot;</h2>
         <div className="flex flex-col items-center gap-6 lg:grid lg:grid-cols-4">
             {enterprise.map((enterprise : any) => (
