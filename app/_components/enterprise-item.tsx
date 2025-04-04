@@ -19,7 +19,7 @@ interface EnterpriseItemProps {
 const EnterpriseItem = ({enterprise} : EnterpriseItemProps) => {
     return ( 
         <Link href={`/enterprise/${enterprise.id}`}>
-            <Card className="min-w-[350px] max-w-[360px] space-y-4 bg-zinc-900 rounded-lg">
+            <Card className="min-w-[350px] max-w-[360px] space-y-4 bg-zinc-900 rounded-lg transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-105">
                 {/** IMAGEM */}
                 <div className="relative h-[240px] w-full">
                     <Image 
