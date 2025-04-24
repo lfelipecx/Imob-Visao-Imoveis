@@ -49,7 +49,7 @@ const Home = async () => {
           />
         </div>
 
-        <div className="space-y-3 pb-5 pl-1 lg:animate-slide-down">
+        <div className="space-y-3 pb-5 pl-1">
           <div className="flex items-center justify-between px-3 py-3">
             <h2 className="text-sm font-semibold uppercase lg:text-xl">Empreendimentos em Destaques</h2>
             <Button
@@ -65,7 +65,7 @@ const Home = async () => {
 
           </div>
 
-          <div className="lg:px-4">
+          <div>
             <EnterPriseList />
           </div>
 
@@ -130,10 +130,10 @@ const Home = async () => {
           </div>
 
           <div className="flex gap-4 overflow-x-scroll [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-4 lg:gap-2 lg:justify-items-center lg:py-3">
-            {enterprisesCity.map((enterprise) => (
-                <EnterpriseItem key={enterprise.id} enterprise={enterprise} />
-            ))}
-        </div>
+              {enterprisesCity.map((enterprise) => (
+                  <EnterpriseItem key={enterprise.id} enterprise={enterprise} />
+              ))}
+          </div>
 
         </div>
 
