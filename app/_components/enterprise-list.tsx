@@ -22,5 +22,6 @@ const EnterPriseList = async () => {
         </div>
      );
 }
- 
+
+
 export default EnterPriseList;
