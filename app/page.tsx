@@ -104,7 +104,7 @@ const Home = async () => {
               <h1 className="text-sm font-semibold uppercase">Agende uma visita</h1>
             </div>
             <video autoPlay loop muted className="w-full lg:h-[500px]">
-              <source src="/antonella.mp4" />
+              <source src="/Bahamas.mp4" />
             </video>
           </div>
         </div>
