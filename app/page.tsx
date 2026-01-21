@@ -42,7 +42,7 @@ const Home = async () => {
         </div>
       </div>
 
-        <div className="px-5 py-5">
+        <div className="animate-fade-up animate-duration-1000 animate-delay-500 animate-ease-linear px-5 py-5">
           <BannerItem
             src="/homebanner02.jpeg"
             alt="Realize seu sonho da casa própria"

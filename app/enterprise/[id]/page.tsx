@@ -32,7 +32,7 @@ const EnterprisesDetails = async ({params: {id} } : EnterpriseDetailsProps) => {
     return ( 
         <div className="flex flex-col gap-4 pb-5">
             <div className="lg:flex">
-                <div className="lg:w-[50%]">
+                <div className="lg:w-[50%] lg:ml-2">
                     <EnterpriseImages name={enterprise?.name} imageUrls={enterprise?.imageUrls} />
                 </div>
                 <div className="lg:w-[50%] lg:p-4">
