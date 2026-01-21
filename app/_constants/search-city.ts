@@ -18,4 +18,7 @@ interface QuickSearchOption {
     {
       title: "Santo Antônio",
     },
+    {
+      title: "Novo Gama",
+    },
   ]
