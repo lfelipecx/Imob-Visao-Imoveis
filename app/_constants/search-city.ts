@@ -4,6 +4,9 @@ interface QuickSearchOption {
   
   export const quickSearchOptions: QuickSearchOption[] = [
     {
+      title: "Brasília",
+    },
+    {
       title: "Valparaíso",
     },
     {
@@ -21,4 +24,5 @@ interface QuickSearchOption {
     {
       title: "Novo Gama",
     },
+    
   ]
