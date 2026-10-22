@@ -94,7 +94,7 @@
   .desktop-feature button { bottom: 45px; right: 52px; }
   .desktop-visit video { height: 360px; border-radius: 12px; object-fit: contain; background: #101112; }
   .desktop-testimonials { padding: 12px 0 56px; }
-  .desktop-testimonials h1 { text-transform: none; font-size: 28px; font-weight: 500; margin-bottom: 24px; }
+  .desktop-testimonials > div:first-child h1 { text-transform: none; font-size: 28px; font-weight: 500; margin-bottom: 24px; }
   .desktop-testimonials .border-primary { border-color: #303133; padding: 28px; background: #1b1c1e; min-width: 0; max-width: 340px; }
   .desktop-bottom-banner { padding: 0; max-width: 800px; margin: auto; }
   .desktop-bottom-banner img { height: auto; object-fit: contain; }
@@ -107,7 +107,10 @@
 
 @media (min-width: 1024px) {
   .home-desktop .enterprise-card .h-\[170px\] p { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
-  .desktop-testimonials > div:last-child > div { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; gap: 24px; }
+  .desktop-testimonials .testimony-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 340px)); justify-content: center; align-items: stretch; width: 100%; gap: clamp(16px, 2vw, 28px); overflow: visible; }
+  .desktop-testimonials .testimony-card { width: 100%; min-width: 0; max-width: none; height: 100%; }
+  .desktop-testimonials .testimony-card h1 { font-size: 17px; line-height: 1.4; margin: 0; text-transform: none; }
+  .desktop-testimonials .testimony-card p { line-height: 1.75; }
 }
 
 @media (min-width: 1024px) {
@@ -117,4 +120,11 @@
   .desktop-feature > div:first-child > div:has(> button) { display: none; }
   .desktop-list-section > div:last-child > div { padding-top: 0; }
   .desktop-list-section > div:last-child > div > a { width: 100%; min-width: 0; }
+}
+
+@media (min-width: 1024px) {
+  .desktop-subsidy-photo { position: relative; width: 100%; height: 350px; overflow: hidden; border-radius: 12px; }
+  .desktop-feature .desktop-subsidy-photo img { height: 100%; object-fit: cover; }
+  .desktop-feature-copy .subsidy-condition { margin-top: 14px; font-size: 12px; line-height: 1.6; color: #a9aaad; }
+  .desktop-hero-image img { object-position: center 42%; }
 }

@@ -5,7 +5,7 @@ const TestimonyList = async () => {
     const testimonys = await db.testimony.findMany({})
 
     return ( 
-        <div className="flex gap-4 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
+        <div className="testimony-grid flex gap-4 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
             {testimonys.map((testimony) => (
                 <TestimonyItem key={testimony.id} testimony={testimony} />
             ))}

@@ -41,7 +41,7 @@ const Home = async () => {
           <div className="hero-caption"><span /> Seu próximo passo começa com uma boa escolha.</div>
         </div>
         <div className="desktop-hero-image">
-          <Image src="/equipe.jpg" alt="Equipe da Visão Imóveis" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+          <Image src="/familia-fachada-hero-desktop.webp" alt="Família brasileira em frente à sua residência" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
           <div className="hero-image-note"><span>MAIS PERTO DA SUA CONQUISTA</span><strong>Imóveis. Pessoas. Novos começos.</strong></div>
         </div>
       </section>
@@ -89,10 +89,12 @@ const Home = async () => {
 
         <div className="desktop-feature lg:flex lg:mt-2">
           <div className="px-5 py-5 relative lg:w-[50%]">
-            <BannerItem
-              src="/bannerSubsidio.jpeg"
-              alt="banner subsídio"
-            />
+            <div className="lg:hidden">
+              <BannerItem src="/bannerSubsidio.jpeg" alt="banner subsídio" />
+            </div>
+            <div className="desktop-subsidy-photo hidden lg:block">
+              <Image src="/subsidio-desktop.webp" alt="Chaves de um novo apartamento em condomínio residencial" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
+            </div>
             <div className="">
                 <Button className="absolute right-10 bottom-10 uppercase text-zinc-900 text-xs font-semibold w-[150px] lg:bottom-32 lg:right-20 lg:w-[200px] lg:font-bold lg:text-sm ">                  
                   <Link href="https://wa.me/5561982435887?text=Vim+pelo+site+e+gostaria+de+fazer+uma+simula%C3%A7%C3%A3o+de+financiamento.">
@@ -105,8 +107,9 @@ const Home = async () => {
           <div className="lg:w-[50%] lg:py-44 lg:px-5 max-lg:hidden">
             <div className="desktop-feature-copy">
               <p className="eyebrow">SEU PRIMEIRO PASSO</p>
-              <h2>A conquista começa com um bom planejamento.</h2>
+              <h2>Subsídios de até <span className="text-primary">R$ 100 mil.</span></h2>
               <p>Conheça as possibilidades de financiamento para o seu perfil. Nossa equipe ajuda você a entender cada etapa da compra do seu imóvel.</p>
+              <p className="subsidy-condition">Valores sujeitos às regras dos programas e à análise do perfil do comprador.</p>
               <Link className="desktop-contact" href="https://wa.me/5561982435887?text=Gostaria+de+simular+meu+financiamento">Simular financiamento <span aria-hidden="true">→</span></Link>
             </div>
           </div>

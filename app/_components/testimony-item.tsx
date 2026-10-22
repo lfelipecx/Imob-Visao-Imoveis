@@ -8,7 +8,7 @@ interface TestimonyItemProps {
 
 const TestimonyItem = ( {testimony} : TestimonyItemProps ) => {
     return ( 
-        <Card className="min-w-[250px] max-w-[250px] rounded-lg flex flex-col gap-4 items-center p-3 border-primary bg-zinc-900">
+        <Card className="testimony-card min-w-[250px] max-w-[250px] rounded-lg flex flex-col gap-4 items-center p-3 border-primary bg-zinc-900">
             <div className="flex items-center relative h-[90px] w-[90px]">
                 <Image 
                     src={testimony.imageUrl}
