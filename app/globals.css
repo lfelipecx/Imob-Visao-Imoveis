@@ -278,3 +278,18 @@
   #smooth-wrapper, #smooth-content { display: block; }
   #smooth-content > .site-shell { height: auto; min-height: 100vh; }
 }
+
+/* Fixed testimonial height keeps every desktop row aligned. */
+@media (min-width: 1024px) {
+  .home-desktop .desktop-testimonials .testimony-card { height: 360px; }
+  .home-desktop .testimony-desktop { height: 100%; min-height: 0; }
+  .home-desktop .testimony-quote-mark,
+  .home-desktop .testimony-desktop figcaption { flex-shrink: 0; }
+  .home-desktop .testimony-desktop blockquote {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #f0b47866 transparent;
+  }
+}
