@@ -8,6 +8,7 @@ import Search from "./_components/search";
 import TestimonyList from "./_components/testimony-list";
 import { db } from "./_lib/prisma";
 import EnterpriseItem from "./_components/enterprise-item";
+import Image from "next/image";
 
 
 
@@ -30,9 +31,22 @@ const Home = async () => {
   })
 
   return (
-    <div className="lg:mx-8">
+    <div className="home-desktop lg:mx-8">
+      <section className="desktop-hero hidden lg:grid">
+        <div className="desktop-hero-copy">
+          <p className="eyebrow">VISÃO IMÓVEIS · DF E ENTORNO</p>
+          <h1>Um novo endereço.<br /><span>Uma nova história.</span></h1>
+          <p className="hero-description">Encontre o imóvel que combina com o seu momento. Da primeira visita à entrega das chaves, conte com a nossa equipe.</p>
+          <Link href="/enterprise/recommended" className="desktop-contact">Explore nossos imóveis <span aria-hidden="true">→</span></Link>
+          <div className="hero-caption"><span /> Seu próximo passo começa com uma boa escolha.</div>
+        </div>
+        <div className="desktop-hero-image">
+          <Image src="/equipe.jpg" alt="Equipe da Visão Imóveis" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+          <div className="hero-image-note"><span>MAIS PERTO DA SUA CONQUISTA</span><strong>Imóveis. Pessoas. Novos começos.</strong></div>
+        </div>
+      </section>
       
-      <div className="lg:flex lg:justify-center lg:flex-col lg:items-center">
+      <div className="desktop-search-panel lg:flex lg:justify-center lg:flex-col lg:items-center">
         <div className="px-5 pt-5">
           <Search />
         </div>
@@ -42,14 +56,14 @@ const Home = async () => {
         </div>
       </div>
 
-        <div className="animate-fade-up animate-duration-1000 animate-delay-500 animate-ease-linear px-5 py-5">
+        <div className="lg:hidden animate-fade-up animate-duration-1000 animate-delay-500 animate-ease-linear px-5 py-5">
           <BannerItem
             src="/homebanner02.jpeg"
             alt="Realize seu sonho da casa própria"
           />
         </div>
 
-        <div className="space-y-3 pb-5 pl-1">
+        <div className="desktop-list-section space-y-3 pb-5 pl-1">
           <div className="flex items-center justify-between px-3 py-3">
             <h2 className="text-sm font-semibold uppercase lg:text-xl">Empreendimentos em Destaques</h2>
             <Button
@@ -73,7 +87,7 @@ const Home = async () => {
 
         
 
-        <div className="lg:flex lg:mt-2">
+        <div className="desktop-feature lg:flex lg:mt-2">
           <div className="px-5 py-5 relative lg:w-[50%]">
             <BannerItem
               src="/bannerSubsidio.jpeg"
@@ -89,14 +103,24 @@ const Home = async () => {
           </div>
 
           <div className="lg:w-[50%] lg:py-44 lg:px-5 max-lg:hidden">
-            <p className="lg:leading-9 lg:font-medium lg:text-2xl lg:text-muted-foreground lg:text-center">Se você está pensando em comprar um imóvel, contar com subsídios do governo pode ser um grande diferencial. Esse benefício ajuda a diminuir o valor da entrada e torna as parcelas do financiamento mais leves, facilitando o planejamento financeiro. Além disso, os subsídios tornam o sonho da casa própria mais acessível, ajudando você a sair do aluguel e investir em algo que é realmente seu, com mais segurança e tranquilidade para o futuro</p>
+            <div className="desktop-feature-copy">
+              <p className="eyebrow">SEU PRIMEIRO PASSO</p>
+              <h2>A conquista começa com um bom planejamento.</h2>
+              <p>Conheça as possibilidades de financiamento para o seu perfil. Nossa equipe ajuda você a entender cada etapa da compra do seu imóvel.</p>
+              <Link className="desktop-contact" href="https://wa.me/5561982435887?text=Gostaria+de+simular+meu+financiamento">Simular financiamento <span aria-hidden="true">→</span></Link>
+            </div>
           </div>
         </div>
 
 
-        <div className="lg:flex">
+        <div className="desktop-feature desktop-visit lg:flex">
           <div className="lg:w-[50%] lg:py-44 lg:px-5 max-lg:hidden">
-            <p className="lg:leading-9 lg:font-medium lg:text-2xl lg:text-muted-foreground lg:text-center">Você está convidado a conhecer de perto o seu futuro lar! Venha visitar nosso apartamento decorado e se encantar com cada detalhe pensado para o seu conforto e bem-estar. Nossa equipe da Visão Imóveis estará pronta para te receber, tirar todas as suas dúvidas e te ajudar em cada passo da realização do sonho da casa própria. Não perca essa oportunidade de visualizar o seu novo começo!</p>
+            <div className="desktop-feature-copy">
+              <p className="eyebrow">CONHEÇA DE PERTO</p>
+              <h2>Imagine seu novo começo.</h2>
+              <p>Visite nosso apartamento decorado, conheça os detalhes e tire suas dúvidas com a equipe da Visão Imóveis.</p>
+              <Link className="desktop-contact" href="https://wa.me/5561982435887?text=Gostaria+de+agendar+uma+visita">Agendar uma visita <span aria-hidden="true">→</span></Link>
+            </div>
           </div>
 
           <div className="py-5 px-5 lg:w-[50%]">
@@ -113,7 +137,7 @@ const Home = async () => {
 
         
 
-        <div className="space-y-3 pb-5 pl-1">
+        <div className="desktop-list-section space-y-3 pb-5 pl-1">
           <div className="flex items-center justify-between px-3 pt-3">
             <h2 className="text-sm font-semibold uppercase lg:text-xl">Valparaíso de Goiás</h2>
             <Button
@@ -138,7 +162,7 @@ const Home = async () => {
         </div>
 
 
-        <div className="pb-5 px-2">
+        <div className="desktop-testimonials pb-5 px-2">
           <div className="p-3 px-3">
             <h1 className="text-sm font-semibold uppercase lg:text-xl lg:text-center">O que nossos clientes dizem</h1>
           </div>
@@ -148,7 +172,7 @@ const Home = async () => {
           </div>
         </div>
 
-        <div className="px-5 pb-5">
+        <div className="desktop-bottom-banner px-5 pb-5">
           <BannerItem
             src="/MCMV.png"
             alt="minha casa minha vida"

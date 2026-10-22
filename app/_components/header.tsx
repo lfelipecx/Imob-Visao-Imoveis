@@ -9,15 +9,23 @@ import { quickSearchOptions } from "../_constants/search-city";
 
 const Header = () => {
     return ( 
-        <div className="flex items-center justify-between px-5 border-b-2 border-b-zinc-900 lg:border-none lg:px-10">
+        <div className="site-header flex items-center justify-between px-5 border-b-2 border-b-zinc-900 lg:border-none lg:px-10">
             <Link href="/" className="relative h-[80px] w-[100px] lg:h-[130px] lg:w-[150px]">
                 <Image src="/logo01.png" alt="Logo Visão" fill className="object-cover" />
             </Link>
 
+            <nav aria-label="Navegação principal" className="hidden lg:flex items-center gap-8 text-sm text-zinc-300">
+                <Link href="/" className="hover:text-primary transition-colors">Início</Link>
+                <Link href="/enterprise/recommended" className="hover:text-primary transition-colors">Imóveis</Link>
+                <Link href="/about" className="hover:text-primary transition-colors">Quem somos</Link>
+                <Link href="/contact" className="hover:text-primary transition-colors">Contato</Link>
+                <Link href="https://wa.me/5561982435887" className="desktop-contact">Fale com um corretor <span aria-hidden="true">→</span></Link>
+            </nav>
+            <div className="lg:hidden">
             <Sheet>
-                <SheetTrigger>
+                <SheetTrigger asChild>
                     <Button 
-                        size="icon" 
+                        size="icon" aria-label="Abrir menu"
                         variant="outline" 
                         className="border-none bg-transparent"
                     >
@@ -111,6 +119,7 @@ const Header = () => {
                     </div>
                 </SheetContent>
             </Sheet>
+            </div>
 
             
 
