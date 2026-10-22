@@ -209,3 +209,32 @@
   .about-cta .about-button { flex-shrink: 0; }
   .about-desktop a:focus-visible { outline: 2px solid #f0b478; outline-offset: 4px; }
 }
+
+/* Consistent visual treatment for the three home section headings. */
+@media (min-width: 1024px) {
+  .home-desktop .home-section-title.home-section-title {
+    position: relative;
+    color: #f5f3ef;
+    font-size: clamp(27px, 2.4vw, 34px);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -.035em;
+    text-transform: none;
+    padding-top: 19px;
+    text-wrap: balance;
+  }
+  .home-desktop .home-section-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 3px;
+    border-radius: 2px;
+    background: #f0b478;
+  }
+  .home-desktop .desktop-testimonials .home-section-title::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

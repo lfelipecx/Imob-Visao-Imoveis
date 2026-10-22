@@ -65,7 +65,7 @@ const Home = async () => {
 
         <div className="desktop-list-section space-y-3 pb-5 pl-1">
           <div className="flex items-center justify-between px-3 py-3">
-            <h2 className="text-sm font-semibold uppercase lg:text-xl">Empreendimentos em Destaques</h2>
+            <h2 className="home-section-title text-sm font-semibold uppercase lg:text-xl">Empreendimentos em Destaques</h2>
             <Button
               variant="ghost"
               className="h-fit p-0 text-primary hover:bg-transparent"
@@ -142,7 +142,7 @@ const Home = async () => {
 
         <div className="desktop-list-section space-y-3 pb-5 pl-1">
           <div className="flex items-center justify-between px-3 pt-3">
-            <h2 className="text-sm font-semibold uppercase lg:text-xl">Valparaíso de Goiás</h2>
+            <h2 className="home-section-title text-sm font-semibold uppercase lg:text-xl">Valparaíso de Goiás</h2>
             <Button
               variant="ghost"
               className="h-fit p-0 text-primary hover:bg-transparent"
@@ -167,7 +167,7 @@ const Home = async () => {
 
         <div className="desktop-testimonials pb-5 px-2">
           <div className="p-3 px-3">
-            <h1 className="text-sm font-semibold uppercase lg:text-xl lg:text-center">O que nossos clientes dizem</h1>
+            <h1 className="home-section-title text-sm font-semibold uppercase lg:text-xl lg:text-center">O que nossos clientes dizem</h1>
           </div>
 
           <div className="lg:flex lg:justify-center">
