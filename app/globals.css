@@ -238,3 +238,43 @@
     transform: translateX(-50%);
   }
 }
+
+/* Testimonial card refresh: desktop only. */
+@media (min-width: 1024px) {
+  .home-desktop .desktop-testimonials .testimony-card {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    gap: 0;
+    border: 1px solid #343435;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #222324, #191a1c);
+    box-shadow: 0 10px 30px #00000014;
+    overflow: hidden;
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+  }
+  .home-desktop .desktop-testimonials .testimony-card:hover {
+    transform: translateY(-4px);
+    border-color: #f0b47866;
+    box-shadow: 0 14px 32px #00000026;
+  }
+  .testimony-desktop { flex-direction: column; width: 100%; min-height: 290px; padding: 28px; margin: 0; }
+  .testimony-quote-mark { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 12px; border: 1px solid #f0b47825; background: #f0b4780a; color: #f0b478; margin-bottom: 22px; }
+  .testimony-desktop blockquote { color: #e0dedb; font-size: 15px; font-weight: 400; line-height: 1.85; margin: 0 0 26px; overflow-wrap: anywhere; }
+  .testimony-desktop figcaption { display: flex; align-items: center; gap: 14px; border-top: 1px solid #ffffff0d; padding-top: 22px; margin-top: auto; }
+  .testimony-avatar { position: relative; width: 52px; height: 52px; flex-shrink: 0; border-radius: 50%; overflow: hidden; border: 2px solid #f0b47866; }
+  .testimony-author { color: #f5f3ef; font-size: 14px; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
+  .testimony-author-accent { width: 18px; height: 2px; background: #f0b478; border-radius: 1px; margin-left: auto; flex-shrink: 0; }
+}
+@media (min-width: 1024px) and (prefers-reduced-motion: reduce) {
+  .home-desktop .desktop-testimonials .testimony-card { transition: none; }
+  .home-desktop .desktop-testimonials .testimony-card:hover { transform: none; }
+}
+
+/* Transparent wrappers retain the existing native layout by default. */
+#smooth-wrapper, #smooth-content { display: contents; }
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  #smooth-wrapper, #smooth-content { display: block; }
+  #smooth-content > .site-shell { height: auto; min-height: 100vh; }
+}

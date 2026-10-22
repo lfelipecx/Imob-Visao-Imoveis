@@ -1,15 +1,16 @@
 import { db } from "../_lib/prisma";
 import TestimonyItem from "./testimony-item";
+import TestimonyMotion from "./testimony-motion";
 
 const TestimonyList = async () => {
     const testimonys = await db.testimony.findMany({})
 
     return ( 
-        <div className="testimony-grid flex gap-4 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
+        <TestimonyMotion>
             {testimonys.map((testimony) => (
                 <TestimonyItem key={testimony.id} testimony={testimony} />
             ))}
-        </div>
+        </TestimonyMotion>
      );
 }
  

@@ -6,6 +6,7 @@ import Footer from "./_components/footer";
 import Link from "next/link";
 import Image from "next/image";
 import Analytics from "./_analytics";
+import SmoothScroll from "./_components/smooth-scroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,12 +40,15 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-        <div className="flex flex-col h-full">
+        <SmoothScroll>
+        <div className="site-shell flex flex-col h-full">
           <Header />
 
           <div className="flex-1">{children}</div>
 
           <Footer />
+        </div>
+        </SmoothScroll>
 
           <div className="relative">
             <Link
@@ -60,7 +64,6 @@ export default function RootLayout({
               />
             </Link>
           </div>
-        </div>
       </body>
     </html>
   );
