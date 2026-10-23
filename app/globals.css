@@ -293,3 +293,20 @@
     scrollbar-color: #f0b47866 transparent;
   }
 }
+
+/* Company results replaces the final promotional image on desktop. */
+@media (min-width: 1024px) {
+  .home-desktop .company-results { margin: 12px 0 0; padding: 48px 40px 44px; border: 1px solid #f0b47826; border-radius: 20px; background: radial-gradient(ellipse at 50% 0%, #f0b4780e, transparent 70%), #191a1c; }
+  .company-results-heading { text-align: center; }
+  .company-results-eyebrow { color: #f0b478; font-size: 10px; letter-spacing: .18em; font-weight: 600; }
+  .company-results-heading h2 { font-size: clamp(27px, 2.5vw, 34px); font-weight: 500; line-height: 1.25; letter-spacing: -.035em; margin: 16px 0; }
+  .company-results-heading > p:last-child { color: #a9aaad; font-size: 14px; line-height: 1.75; }
+  .company-results-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 40px; }
+  .company-result { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 8px 16px; text-align: center; }
+  .company-result + .company-result { border-left: 1px solid #ffffff12; }
+  .company-result-icon { color: #f0b478; opacity: .8; margin-bottom: 18px; }
+  .company-result-number { display: flex; align-items: baseline; justify-content: center; gap: 6px; color: #f0b478; font-size: clamp(44px, 4.4vw, 62px); font-weight: 500; line-height: 1.1; letter-spacing: -.045em; font-variant-numeric: tabular-nums; }
+  .company-result-plus { font-size: .6em; font-weight: 400; }
+  .company-result-since { color: #bcb7b1; font-size: 12px; letter-spacing: 0; margin-right: 4px; }
+  .company-result-label { color: #d6d2cd; font-size: 14px; line-height: 1.5; margin-top: 14px; }
+}

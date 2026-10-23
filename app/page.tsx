@@ -9,6 +9,7 @@ import TestimonyList from "./_components/testimony-list";
 import { db } from "./_lib/prisma";
 import EnterpriseItem from "./_components/enterprise-item";
 import Image from "next/image";
+import CompanyResults from "./_components/company-results";
 
 
 
@@ -175,7 +176,9 @@ const Home = async () => {
           </div>
         </div>
 
-        <div className="desktop-bottom-banner px-5 pb-5">
+        <CompanyResults />
+
+        <div className="desktop-bottom-banner px-5 pb-5 lg:hidden">
           <BannerItem
             src="/MCMV.png"
             alt="minha casa minha vida"
