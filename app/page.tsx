@@ -33,7 +33,7 @@ const Home = async () => {
 
   return (
     <div className="home-desktop lg:mx-8">
-      <section className="desktop-hero hidden lg:grid">
+      <section className="desktop-hero grid">
         <div className="desktop-hero-copy">
           <p className="eyebrow">VISÃO IMÓVEIS · DF E ENTORNO</p>
           <h1>Um novo endereço.<br /><span>Uma nova história.</span></h1>
@@ -57,12 +57,7 @@ const Home = async () => {
         </div>
       </div>
 
-        <div className="lg:hidden animate-fade-up animate-duration-1000 animate-delay-500 animate-ease-linear px-5 py-5">
-          <BannerItem
-            src="/homebanner02.jpeg"
-            alt="Realize seu sonho da casa própria"
-          />
-        </div>
+
 
         <div className="desktop-list-section space-y-3 pb-5 pl-1">
           <div className="flex items-center justify-between px-3 py-3">
@@ -90,22 +85,12 @@ const Home = async () => {
 
         <div className="desktop-feature lg:flex lg:mt-2">
           <div className="px-5 py-5 relative lg:w-[50%]">
-            <div className="lg:hidden">
-              <BannerItem src="/bannerSubsidio.jpeg" alt="banner subsídio" />
-            </div>
-            <div className="desktop-subsidy-photo hidden lg:block">
+            <div className="desktop-subsidy-photo">
               <Image src="/subsidio-desktop.webp" alt="Chaves de um novo apartamento em condomínio residencial" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
             </div>
-            <div className="">
-                <Button className="absolute right-10 bottom-10 uppercase text-zinc-900 text-xs font-semibold w-[150px] lg:bottom-32 lg:right-20 lg:w-[200px] lg:font-bold lg:text-sm ">                  
-                  <Link href="https://wa.me/5561982435887?text=Vim+pelo+site+e+gostaria+de+fazer+uma+simula%C3%A7%C3%A3o+de+financiamento.">
-                    fazer uma simulação
-                  </Link>
-                </Button>
-            </div>            
           </div>
 
-          <div className="lg:w-[50%] lg:py-44 lg:px-5 max-lg:hidden">
+          <div className="lg:w-[50%] lg:py-44 lg:px-5">
             <div className="desktop-feature-copy">
               <p className="eyebrow">SEU PRIMEIRO PASSO</p>
               <h2>Subsídios de até <span className="text-primary">R$ 100 mil.</span></h2>
@@ -118,7 +103,7 @@ const Home = async () => {
 
 
         <div className="desktop-feature desktop-visit lg:flex">
-          <div className="lg:w-[50%] lg:py-44 lg:px-5 max-lg:hidden">
+          <div className="lg:w-[50%] lg:py-44 lg:px-5">
             <div className="desktop-feature-copy">
               <p className="eyebrow">CONHEÇA DE PERTO</p>
               <h2>Imagine seu novo começo.</h2>
@@ -178,12 +163,7 @@ const Home = async () => {
 
         <CompanyResults />
 
-        <div className="desktop-bottom-banner px-5 pb-5 lg:hidden">
-          <BannerItem
-            src="/MCMV.png"
-            alt="minha casa minha vida"
-          />
-        </div>
+
 
 
         

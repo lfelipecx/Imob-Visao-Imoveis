@@ -11,17 +11,18 @@ export default function TestimonyMotion({ children }: { children: ReactNode }) {
     gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
 
-    media.add("(min-width: 1024px) and (prefers-reduced-motion: no-preference)", () => {
+    media.add("(prefers-reduced-motion: no-preference)", () => {
       const cards = container.current?.querySelectorAll<HTMLElement>(".testimony-card");
       if (!cards?.length) return;
 
+      const desktop = window.matchMedia("(min-width: 1024px)").matches;
       // Avoid CSS transform transitions competing with GSAP during the reveal.
       gsap.set(cards, { transition: "border-color .2s ease, box-shadow .2s ease" });
-      gsap.fromTo(cards, { opacity: 0, y: 32 }, {
+      gsap.fromTo(cards, { opacity: 0, y: desktop ? 32 : 16 }, {
         opacity: 1,
         y: 0,
-        duration: 0.75,
-        stagger: 0.14,
+        duration: desktop ? 0.75 : 0.5,
+        stagger: desktop ? 0.14 : 0.08,
         ease: "power2.out",
         clearProps: "opacity,transform,transition",
         scrollTrigger: {

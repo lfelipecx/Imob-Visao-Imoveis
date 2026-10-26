@@ -17,7 +17,7 @@ export default function CompanyResults() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
-    media.add("(min-width: 1024px) and (prefers-reduced-motion: no-preference)", () => {
+    media.add("(prefers-reduced-motion: no-preference)", () => {
       const counters = section.current?.querySelectorAll<HTMLElement>("[data-result-count]");
       if (!counters?.length) return;
       const tweens: gsap.core.Tween[] = [];
@@ -49,7 +49,7 @@ export default function CompanyResults() {
   }, []);
 
   return (
-    <section ref={section} className="company-results hidden lg:block" aria-labelledby="company-results-title">
+    <section ref={section} className="company-results" aria-labelledby="company-results-title">
       <header className="company-results-heading">
         <p className="company-results-eyebrow">NOSSA TRAJETÓRIA EM NÚMEROS</p>
         <h2 id="company-results-title">Confiança que se transforma<br />em novas conquistas.</h2>
